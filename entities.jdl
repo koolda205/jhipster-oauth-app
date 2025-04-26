@@ -1,0 +1,19 @@
+entity People {
+  address String,
+  email String required unique,
+  password String required,
+  name String required
+}
+
+entity Orders {
+  userId Long required,
+  productId Long required,
+  total Double required,
+  quantity Integer required
+}
+
+entity Products {
+  title String required,
+  category String,
+  price Double required
+}

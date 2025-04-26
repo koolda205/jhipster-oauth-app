@@ -1,0 +1,27 @@
+{
+  "jhipsterOauthApp": {
+    "orders": {
+      "home": {
+        "title": "Orders",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Orders",
+        "createOrEditLabel": "Создать или отредактировать Orders",
+        "notFound": "Orders не найдено"
+      },
+      "created": "Новый Orders создан с идентификатором {{ param }}",
+      "updated": "Orders обновлен с идентификатором {{ param }}",
+      "deleted": "Orders удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Orders {{ id }}?"
+      },
+      "detail": {
+        "title": "Orders"
+      },
+      "id": "ID",
+      "userId": "User Id",
+      "productId": "Product Id",
+      "total": "Total",
+      "quantity": "Quantity"
+    }
+  }
+}

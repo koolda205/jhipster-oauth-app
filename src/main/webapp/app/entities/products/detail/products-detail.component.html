@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (products(); as productsRef) {
+      <div>
+        <h2 data-cy="productsDetailsHeading"><span jhiTranslate="jhipsterOauthApp.products.detail.title">Products</span></h2>
+
+        <hr />
+
+        <jhi-alert-error />
+
+        <jhi-alert />
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ productsRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterOauthApp.products.title">Title</span></dt>
+          <dd>
+            <span>{{ productsRef.title }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterOauthApp.products.category">Category</span></dt>
+          <dd>
+            <span>{{ productsRef.category }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterOauthApp.products.price">Price</span></dt>
+          <dd>
+            <span>{{ productsRef.price }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Назад</span>
+        </button>
+
+        <button type="button" [routerLink]="['/products', productsRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Изменить</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

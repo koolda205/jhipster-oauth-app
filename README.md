@@ -1,5 +1,15 @@
 # jhipsterOauthApp
 
+# JHipster OAuth App
+
+## Инструкция по запуску
+
+1. Убедитесь, что Docker установлен и запущен.
+2. Запустите контейнер:
+   ```bash
+   docker run -d -p 8080:8080 --name jhipster-oauth-app jhipster-oauth-app
+   ```
+
 This application was generated using JHipster 8.10.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.10.0](https://www.jhipster.tech/documentation-archive/v8.10.0).
 
 ## Project Structure

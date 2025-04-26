@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (people(); as peopleRef) {
+      <div>
+        <h2 data-cy="peopleDetailsHeading"><span jhiTranslate="jhipsterOauthApp.people.detail.title">People</span></h2>
+
+        <hr />
+
+        <jhi-alert-error />
+
+        <jhi-alert />
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ peopleRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterOauthApp.people.address">Address</span></dt>
+          <dd>
+            <span>{{ peopleRef.address }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterOauthApp.people.email">Email</span></dt>
+          <dd>
+            <span>{{ peopleRef.email }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterOauthApp.people.password">Password</span></dt>
+          <dd>
+            <span>{{ peopleRef.password }}</span>
+          </dd>
+          <dt><span jhiTranslate="jhipsterOauthApp.people.name">Name</span></dt>
+          <dd>
+            <span>{{ peopleRef.name }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Назад</span>
+        </button>
+
+        <button type="button" [routerLink]="['/people', peopleRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Изменить</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

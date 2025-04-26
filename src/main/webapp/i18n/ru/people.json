@@ -1,0 +1,27 @@
+{
+  "jhipsterOauthApp": {
+    "people": {
+      "home": {
+        "title": "People",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый People",
+        "createOrEditLabel": "Создать или отредактировать People",
+        "notFound": "People не найдено"
+      },
+      "created": "Новый People создан с идентификатором {{ param }}",
+      "updated": "People обновлен с идентификатором {{ param }}",
+      "deleted": "People удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить People {{ id }}?"
+      },
+      "detail": {
+        "title": "People"
+      },
+      "id": "ID",
+      "address": "Address",
+      "email": "Email",
+      "password": "Password",
+      "name": "Name"
+    }
+  }
+}

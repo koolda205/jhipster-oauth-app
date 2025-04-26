@@ -1,0 +1,25 @@
+{
+  "annotations": {
+    "changelogDate": "20250426221324"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Products",
+  "relationships": [],
+  "searchEngine": "no"
+}
